@@ -7,7 +7,7 @@ qmk_firmware:
 build:
 	rm -Rf qmk_firmware/keyboards/daarrows
 	cp -Rf daarrows qmk_firmware/keyboards/
-	cd qmk_firmware/keyboards/daarrows; make
+	cd qmk_firmware; make daarrows
 
 program:
 # pro micro
