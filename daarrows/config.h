@@ -56,7 +56,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define RGB_DI_PIN B3 // 14 (pro micro)
 #ifdef RGB_DI_PIN
 #define RGBLIGHT_ANIMATIONS 1
-#define RGBLED_NUM 2
+#define RGBLED_NUM 3
 #define RGBLIGHT_HUE_STEP 8
 #define RGBLIGHT_SAT_STEP 8
 #define RGBLIGHT_VAL_STEP 8

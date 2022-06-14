@@ -7,12 +7,12 @@ qmk_firmware:
 build:
 	rm -Rf qmk_firmware/keyboards/daarrows
 	cp -Rf daarrows qmk_firmware/keyboards/
-	cd qmk_firmware/keyboards/daarrows; make
+	cd qmk_firmware; make daarrows
 
 program:
 # pro micro
 # note: you have to manually connect RESET and GND a few times before running this
-	avrdude -v -patmega32u4 -cavr109 -P/dev/ttyACM0 -b57600 -D \
+	avrdude -v -patmega32u4 -cavr109 -P/dev/ttyACM1 -b57600 -D \
 	        -Uflash:w:qmk_firmware/.build/daarrows_default.hex:i
 
 clean:
